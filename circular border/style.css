@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+background-color: black;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.box{
+    position: relative;
+    height: 38vh;
+    width: 18vw;
+    /* background-color: red; */
+    /* border: 2px solid white; */
+    border-radius: 50vmax;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box::before{
+    content: "";
+    position: absolute;
+    inset: -10px 60px;
+    background: linear-gradient(yellow, blue);
+    transition: 0.5s;
+    animation: border-animation 4s linear infinite;
+}
+.box:hover::before{
+inset: -50px 0px;
+}
+@keyframes border-animation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.box::after{
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background: #162052;
+    border-radius: 50vmax;
+    z-index: 1;
+}
+.content{
+    position: absolute;
+    z-index: 99;
+    border-radius: 10vmax;
+    height: 33vh;
+    width: 85%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    position: absolute;
+    height: 27vh;
+    width: 80%;
+    z-index: 99;
+    border-radius: 50vmax;
+}
+
+
+h1{
+ position: absolute;
+        z-index: 99;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2vmax;
+        color: white;
+        left: 16%;
+        top: 20%;
+        display: none;
+}
+h2{
+    position: absolute;
+    z-index: 99;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vmax;
+    color: white;
+    left: 22%;
+    top: 40%;
+    display: none;
+}
+button{
+    position: absolute;
+    z-index: 99;
+    top: 55%;
+    left: 33%;
+    padding: 0.5vmax 1vmax;
+    background-color: white;
+    border-radius: 5vmax;
+    border: none;
+    color: black;
+    font-size: 1.3vmax;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+    font-weight: bold;
+    transition: all ease 1s;
+
+}
+.content:hover img{
+    display: none;
+}
+.content:hover{
+    background: #162052;
+   
+}
+.content:hover h1{
+    display: initial;
+    }
+.content:hover h2{
+display: initial;
+}
+
+.content:hover button{
+    display: initial;
+    color: black;
+    }
+    button:hover{
+        transform: translateY(1.1vmax);
+    }
+
+    /* ---------------------------------------------------------- */
+
+
+    .pg1{
+        height: 100vh;
+        width: 100%;
+        background-color:white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.2vmax;
+    }
+    .animation{
+        height: 9vh;
+        overflow: hidden;
+        /* background-color: red; */
+        margin-left: 1vmax;
+    }
+     .animation>div>div{
+        padding: 1vmax 1vmax;
+/* height: 9vh; */
+margin-bottom: 6vmax;
+display: inline-block;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1.5vmax;
+     }
+     .animation div:first-child{
+    animation: text-animation 8s infinite;
+     }
+     .first div{
+height: 9vh;
+width: 100%;
+        background-color: yellow;
+     }
+     .second div{
+height: 9vh;
+width: 100%;
+        background-color: blue;
+     }
+     .third div{
+height: 9vh;
+width: 100%;
+        background-color: cyan;
+     }
+     @keyframes text-animation{
+        0%{
+            margin-top: 0;
+        }
+        10%{
+            margin-top: 0;
+        }
+        20%{
+          margin-top: -8vmax;
+        }
+        30%{
+            margin-top: -7vmax;
+
+        }
+        40%{
+            margin-top: -15vmax;
+        }
+        60%{
+            margin-top: -15vmax;
+
+        }
+        70%{
+            margin-top: -7vmax;
+        }
+        80%{
+            margin-top: -7vmax;
+        }
+        90%{
+            margin-top: 0;
+        }
+        100%{
+            margin-top: 0;
+        }
+     }
+
+     /* --------------------------------------------------------- */
+
+     .pg2{
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+     .img-container{
+        height: 70vh;
+        width: 40vw;
+        position: relative;
+     }
+     .img1{
+        height: 100%;
+        width: 100%;
+        -webkit-mask-image: url(/graph.png);
+        mask-image: url(/graph.png);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        background-color: red;
+        
+     }
+     .img2{
+        height: 45vh;
+        width: 30vw;
+        position: absolute;
+        z-index: 999;
+        top: 15%;
+        left: 15%;
+     }

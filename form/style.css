@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    /* color: white; */
+}
+.pg1{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    height: 60vh;
+    width: 70%;
+    /* border: 2px solid white; */
+    display: flex;
+    position: relative;
+    background-color:rgb(106, 210, 214);
+    border-radius: 1vmax;
+    box-shadow: 5px 5px 5px white;
+}
+.box-left{
+    height: 100%;
+    width: 50%;
+    /* background-color: cyan; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.box-right{
+    height: 100%;
+    width: 50%;
+    /* background-color: yellow; */
+    display: flex;
+   flex-direction: column;
+
+   align-items: center;
+   justify-content: center;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vmax;
+    color: black;
+}
+button{
+    padding: 0.6vmax 2vmax;
+    border: 2px solid black;
+    font-size: 1.4vmax;
+    border-radius: 0.5vmax;
+    color:black;
+    background-color: transparent;
+    margin: 1vmax;
+}
+.form{
+    height: 80vh;
+    width: 30vw;
+    /* border: 2px solid white; */
+    position: absolute;
+    left:5%;
+    top: -17%;
+    background-color: white;
+   transition: all ease 1s;
+   border-radius: 1vmax;
+
+}
+.signup{
+    height: 100%;
+    width: 100%;
+    /* background-color:rgb(233, 126, 126); */
+    background-color:rgb(226, 68, 68);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vmax;
+    
+}
+input{
+    padding: 0.7vmax 1.6vmax;
+    font-size: 1.4vmax;
+    border-radius: 0.3vmax;
+    border: none;
+}
+.signbtn{
+    background-color: pink;
+}
+.login{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(201, 9, 96);
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vmax;
+}
+.logbtn{
+    background-color: pink;
+}

@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxes{
+height: 50vh;
+width: 30vw;
+background-color: pink;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+padding: 0 1vmax;
+}
+h1{
+    font-size: 1.8vmax;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dabba{
+    height: 13vh;
+    width: 100%;
+    /* border: 2px solid black; */
+    margin-top: 2vmax;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vmax;
+}
+.box{
+height: 10vh;
+width: 5vw;
+border: 2px solid black;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 2vmax;
+}
+button{
+    padding: 0.8vmax 1.5vmax;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1.4vmax;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0.6vmax;
+}
