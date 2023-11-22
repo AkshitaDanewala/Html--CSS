@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+    width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+background-color: rgb(32, 218, 218);
+}
+.container1, .container2, .container3{
+    height: 50vh;
+    width: 22vw;
+    border-radius: 1vmax;
+    position: relative;
+    overflow: hidden;
+  
+}
+.container1 >i, .container2 >i, .container3 >i{
+    font-size: 3.5vmax;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    /* opacity: 0.8; */
+    transition: transform ease 0.5s;
+}
+.img1{
+    height: 100%;
+    width: 100%;
+    border-radius: 1vmax;
+object-fit: cover;
+}
+.img2{
+    height: 100%;
+    width: 100%;
+    border-radius: 1vmax;
+object-fit: cover;
+object-position: top;
+
+}
+
+.img3{
+    height: 100%;
+    width: 100%;
+    border-radius: 1vmax;
+object-fit: cover;
+}
+.container1 >h6 .redheart1{
+font-size: 3vmax;
+position: absolute;
+top: 80%;
+left:5%;
+color: white;
+
+}
+
+.container2 >h6 .redheart2{
+    font-size: 3vmax;
+    position: absolute;
+    top: 80%;
+    left:5%;
+color: white;
+
+    }
+
+    .container3 >h6 .redheart3{
+        font-size: 3vmax;
+        position: absolute;
+        top: 80%;
+        left:5%;
+color: white;
+
+        }
+
+        .number1{
+            height: 4vh;
+            width: 2vw;
+            border: 2px solid black;
+            position: absolute;
+            top: 76%;
+            left: 6%;
+            font-size: 1.7vmax;
+            text-align: center;
+        }
+
+        .number2{
+            height: 4vh;
+            width: 2vw;
+            border: 2px solid black;
+            position: absolute;
+            top: 76%;
+            left: 32%;
+            font-size: 1.7vmax;
+            text-align: center;
+        }
+
+        .number3{
+            height: 4vh;
+            width: 2vw;
+            border: 2px solid black;
+            position: absolute;
+            top: 76%;
+            left: 62%;
+            font-size: 1.7vmax;
+            text-align: center;
+        }
