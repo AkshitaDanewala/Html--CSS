@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.pg4-head{
+height: 10vh;
+width: 100%;
+/* border: 2px solid black; */
+text-align: center;
+}
+.pg4-head >h1{
+    font-style: italic;
+    font-size: 4vmax;
+}
+.wrapper{
+    height: 55vh;
+    width: 100%;
+    /* border: 2px solid black; */
+    /* margin: auto; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.single-card1, .single-card2, .single-card3, .single-card4{
+    height: 50vh;
+    width: 21vw;
+    /* border: 2px solid black; */
+    /* background-color: black; */
+    border-radius: 1vmax;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    transition: all 1.5s ease;
+    transform-style:preserve-3d;
+    /* padding: 0.3vmax 0; */
+}
+/* .wrapper{
+    perspective: 900vmax;
+} */
+ .single-card1:hover, .single-card2:hover, .single-card3:hover, .single-card4:hover{
+transform: rotatey(180deg);
+/* transform: rotatex(180deg); */
+
+}
+.front1, .front2, .front3, .front4, .back{
+    width: 19vw;
+    position: relative;
+    top: 0;
+    left: 0;
+    /* background-color: red; */
+    backface-visibility: hidden;
+    margin: auto;
+}
+.front1{
+    border: 2px solid black;
+    cursor: pointer;
+    height: 100%;
+    background-image: url("https://media.istockphoto.com/id/948577172/photo/portrait-of-beautiful-woman-smiling-at-camera-on-grey.jpg?s=612x612&w=0&k=20&c=j1EMO-1x6L9Ex57_ZwS7cpBoyRigpnGkswJO63laqVg=");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    border-radius: 1vmax;
+
+}
+.front2{
+    border: 2px solid black;
+    cursor: pointer;
+    height: 100%;
+    background-image: url("https://media.istockphoto.com/id/1567361099/photo/teenage-girl-in-white-shirt-on-a-wall-background.jpg?s=612x612&w=0&k=20&c=6vtwr4AgltHlXUALAzsv3oK6pv5k6h-9y-PX88TWjh4=");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    border-radius: 1vmax;
+}
+.front3{
+    border: 2px solid black;
+    cursor: pointer;
+    height: 100%;
+    background-image: url("https://media.istockphoto.com/id/1131853129/photo/portrait-of-a-happy-woman-at-home.jpg?s=612x612&w=0&k=20&c=_sZ2K7HA5daTWYhGF77P7GiMoEh4E7cT3v-E6sgQ20Y=");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    border-radius: 1vmax;
+}
+.front4{
+    border: 2px solid black;
+    cursor: pointer;
+    height: 100%;
+    background-image: url("https://media.istockphoto.com/id/1388752136/photo/happy-smiling-young-woman-with-snow-white-smile-at-dentist-reception-dental-care-concept.jpg?s=612x612&w=0&k=20&c=1YU08nJ6IPiSlc6fLx92f8jZ41FAidVrR1_Y9DQMy4k=");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    border-radius: 1vmax;
+}
+.back{
+    transform: rotateY(180deg);
+    position: absolute;
+    border-radius: 1vmax;
+    /* border: 2px solid blue; */
+    margin-left: 1vmax;
+    height: 100%;
+    background-color:rgb(15, 216, 216);
+    
+}
+.content{
+    padding-top: 3vmax;
+
+}
+.content >h1{
+    font-size: 3vmax;
+    margin: 0;
+    font-style: italic;
+
+}
+.content >h4{
+    margin: 1vmax  0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.content >p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding:0 0.3vmax ;
+}
+.icons{
+    display: flex;
+    font-size: 3vmax;
+    margin-left: 3vmax;
+}
